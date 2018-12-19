@@ -1,0 +1,132 @@
+#img table,tr, td {
+    border: 1px solid transparent;
+    align="center";
+    border-spacing: 25px;
+    border-collapse: collapse;
+    border-width: 5px;
+    padding: 5px;
+    padding-left: 50px;
+}
+        .pricebanner {
+
+            -webkit-animation-name: pricebanneret;
+            -webkit-animation-duration: 10s;
+            animation-name: pricebanneret;
+            animation-duration: 10s;
+            z-index: 10;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index: 100;
+        }
+        @-webkit-keyframes pricebanneret {
+            0%   {left: 0;}
+            50%   {left: 2560px;}
+            50.01%   {left: -2560px;}
+            100% {left:0;}
+        }
+        @keyframes pricebanneret {
+            0%   {left: 0;}
+            50%   {left: 2560px;}
+            50.01%   {left: -2560px;}
+            100% {left:0;}
+        }
+        @-webkit-keyframes pricebanneret2 {
+            0%   {left:-2560px;}
+            100% {left:2560px;}
+        }
+        @keyframes pricebanneret2 {
+            0%   {left:-2560px;}
+            100% {left:2560px;}
+        }
+        .bgpricebanner {
+            background-color: transparent;
+            width: 2560px;
+            overflow: hidden;
+			background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            padding-left: 30px;
+            border-left: 2px solid #00FF00;
+        }
+        /*      2560x1440 standard - windows     */
+        @media only screen and  (min-height: 1309px){
+            @-webkit-keyframes pricebanneret {
+                0%   {left: 0;}
+                50%   {left: 2560px;}
+                50.01%   {left: -2560px;}
+                100% {left:0;}
+            }
+            @keyframes pricebanneret {
+                0%   {left: 0;}
+                50%   {left: 2560px;}
+                50.01%   {left: -2560px;}
+                100% {left:0;}
+            }
+            @-webkit-keyframes pricebanneret2 {
+                0%   {left:-2560px;}
+                100% {left:2560px;}
+            }
+            @keyframes pricebanneret2 {
+                0%   {left:-2560px;}
+                100% {left:2560px;}
+            }
+            .bgpricebanner {
+                background-color: black;
+                width: 2560px;
+                overflow: hidden;
+            }
+        }
+        /*      2560x1600 standard - MAC     */
+        @media screen and (min-height: 1600px){
+            @-webkit-keyframes pricebanneret {
+                0%   {left: 0;}
+                50%   {left: 2560px;}
+                50.01%   {left: -2560px;}
+                100% {left:0;}
+            }
+            @keyframes pricebanneret {
+                0%   {left: 0;}
+                50%   {left: 2560px;}
+                50.01%   {left: -2560px;}
+                100% {left:0;}
+            }
+            @-webkit-keyframes pricebanneret2 {
+                0%   {left:-2560px;}
+                100% {left:2560px;}
+            }
+            @keyframes pricebanneret2 {
+                0%   {left:-2560px;}
+                100% {left:2560px;}
+            }
+            .bgpricebanner {
+                background-color: black;
+                width: 2560px;
+                overflow: hidden;
+            }
+        }
+        table {
+            display: inline;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .theimg img {
+            width: 50px;
+            height: 50px;
+            padding-right: 150px;
+        }
+        table {
+            margin-right: 140px;
+        }
+        td {
+            color: white;
+            font-size: 20px;
+        }
+        th img {
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        th {
+            color: white;
+            font-size: 20px;
+        }

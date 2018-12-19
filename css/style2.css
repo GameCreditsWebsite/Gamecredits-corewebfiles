@@ -1,0 +1,169 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #1fb3cf;
+  background: linear-gradient(to right, #1fb3cf 0%, #0138ea 100%);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.headline,
+.subheadline {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.subheadline {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.teaser {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0 0 2rem;
+}
+
+.roadmap {
+  margin-top: 2rem;
+}
+
+.progress {
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+.progress .progress-bar {
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+}
+
+.filters {
+  margin-bottom: 1rem;
+}
+.filters button {
+  padding: 0.5rem 2.5rem;
+  margin: 0 0 1rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.filters button.showTag {
+  opacity: 0.6;
+}
+.filters button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.task {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  color: #3f4346;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: opacity .2s ease-out;
+}
+.task.filtered {
+  opacity: 0.5;
+}
+.task h1 {
+  color: #3f4346;
+  font-size: 1.35rem;
+  padding: 1rem 1.5rem 1rem;
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: background-color .1s ease-out;
+}
+.task h1:hover {
+  background-color: #f5f5f5;
+}
+.task .task-content {
+  padding: 0.5rem 1.5rem 0;
+}
+.task .task-content p {
+  margin-bottom: 0.5rem;
+}
+.task .task-content:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.task .expand-enter-active, .task .expand-leave-active {
+  transition: height .5s;
+}
+.task .expand-enter, .task .expand-leave-to {
+  height: 0;
+}
+.task .progress {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+.task .progress-bar {
+  border-radius: 0;
+  background-color: #1af3ae;
+  background: #1af3ae repeating-linear-gradient(135deg, transparent, transparent 8px, rgba(255, 255, 255, 0.3) 8px, rgba(255, 255, 255, 0.3) 16px);
+}
+.task h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3f4346;
+  margin: 0 0 0.25rem;
+}
+.task p,
+.task .subtasks {
+  color: #8f979c;
+  margin: 0 0 1rem;
+}
+.task .subtask {
+  margin: 0 0 1rem;
+}
+.task .subtask p {
+  margin: 0 0 0.5rem;
+}
+.task .subtask .progress,
+.task .subtask .progress-bar {
+  display: block;
+  height: 3px;
+}
+.task .subtask .progress.wip .progress-bar {
+  background-color: #f3bb3b;
+}
+.task strong {
+  font-weight: 700;
+}
+
+.credit {
+  margin: 0 0 1rem;
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* FUN */
+::-moz-selection {
+  background: #1af3ae;
+  color: #fff;
+}
+::selection {
+  background: #1af3ae;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #1af3ae;
+  color: #fff;
+}

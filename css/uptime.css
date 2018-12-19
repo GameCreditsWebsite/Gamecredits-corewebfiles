@@ -1,0 +1,15 @@
+<style>
+#countup {
+    text-align: center;
+}
+#countup p {
+    display: inline-block;
+    padding: 10px;
+    background: #151515;
+    margin: 0 0 20px;
+    border-radius: 3px;
+    color: white;
+    min-width: 2.6rem;
+	font-family: Open Sans, sans-serif;
+}
+</style>
